@@ -1,0 +1,2 @@
+1.edit line 273,580 of index.html to edit workshops writeup
+2.edit line 110-114 of register.html to open new link
