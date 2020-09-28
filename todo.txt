@@ -1,3 +1,0 @@
-1.edit line 580 of index.html to edit workshops writeup(line 273 brief description)
-2.edit line 110-114 of register.html to open new link
-3.edit line 211 of index.html to change position of video
