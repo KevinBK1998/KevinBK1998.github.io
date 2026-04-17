@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Kevin Bijoy Kurian (KBK)">
+  <meta name="description" content="KBK — Software Developer from Bangalore. Portfolio, projects, movies, resume and more.">
+  <title>KBK · Portfolio v2</title>
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>body { font-family: 'Inter', 'Segoe UI', system-ui, sans-serif; }</style>
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <span class="nav-logo">KBK</span>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#movies">Movies</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#meme">Meme</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle colour theme" title="Toggle light/dark mode">🌙</button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <span class="hero-badge">Software Developer · Bangalore</span>
+        <h1 class="hero-title">Hi, I'm <span class="accent">Kevin</span><br>Bijoy Kurian</h1>
+        <p class="hero-subtitle">Also known as <strong>KBK</strong> — I build things, rank movies, and occasionally find the perfect avocado.</p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary">View Projects ↓</a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="../images/img_creator.jpg" alt="Kevin Bijoy Kurian" class="hero-avatar">
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">Scroll</div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-photo-wrap reveal">
+          <img src="../images/img_creator.jpg" alt="Photo of Kevin" class="about-photo">
+          <div class="about-photo-deco" aria-hidden="true"></div>
+        </div>
+        <div class="about-text reveal">
+          <div class="section-tag">About Me</div>
+          <h2>Coding, Gaming &amp; Everything In Between</h2>
+          <p>
+            My name is <strong>Kevin Bijoy Kurian</strong>, but most people know me as <strong>KBK</strong>.
+            I live in Bangalore with my family. My hobbies are gaming and coding. I love my life.
+          </p>
+          <p>
+            I graduated from <strong>NIT Calicut</strong> with a B.Tech in Electrical &amp; Electronics Engineering
+            and have since spent 4+ years as a Software Developer at <strong>Tesco Technology</strong>.
+            I recently levelled up my web skills — and this is the result.
+          </p>
+          <div class="about-chips">
+            <span class="chip">C / C++</span>
+            <span class="chip">Python</span>
+            <span class="chip">Java</span>
+            <span class="chip">Android</span>
+            <span class="chip">SQL</span>
+            <span class="chip">HTML / CSS</span>
+            <span class="chip">Gaming 🎮</span>
+            <span class="chip">Reading 📚</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <div class="container">
+      <header class="section-header reveal">
+        <div class="section-tag">Work</div>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-desc">A selection of things I've built — from web experiments to a Game Boy emulator.</p>
+      </header>
+      <div class="projects-grid">
+
+        <article class="project-card reveal">
+          <img src="../images/movie_rank.png" alt="Movie Ranking screenshot" class="project-img">
+          <div class="project-body">
+            <h3 class="project-title">Movie Ranking</h3>
+            <p class="project-desc">A personal ranking of my all-time favourite films, built with pure HTML. Part of this site!</p>
+            <a href="../movie.html" class="project-link" target="_blank" rel="noopener">Visit page →</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <img src="../images/bday_invite.png" alt="Birthday Invite screenshot" class="project-img">
+          <div class="project-body">
+            <h3 class="project-title">Birthday Invite</h3>
+            <p class="project-desc">A fun digital birthday invitation page — complete with a cake image and a Google Maps link.</p>
+            <a href="../bday.html" class="project-link" target="_blank" rel="noopener">Visit page →</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <img src="../images/playGB.png" alt="playGB repository screenshot" class="project-img">
+          <div class="project-body">
+            <h3 class="project-title">playGB</h3>
+            <p class="project-desc">A Game Boy emulator written from scratch — one of my most ambitious personal projects.</p>
+            <a href="https://github.com/KevinBK1998/playGB" class="project-link" target="_blank" rel="noopener">GitHub repo →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MOVIES ===== -->
+  <section id="movies">
+    <div class="container">
+      <header class="section-header reveal">
+        <div class="section-tag">Film</div>
+        <h2 class="section-title">My Top 3 Movies</h2>
+        <p class="section-desc">According to KBK — highly scientific, totally objective.</p>
+      </header>
+      <div class="movies-list">
+
+        <div class="movie-item reveal">
+          <span class="movie-rank">#1</span>
+          <div class="movie-info">
+            <h3>Deadpool &amp; Wolverine</h3>
+            <p>Full of cameos and funny references — my absolute favourite.</p>
+          </div>
+          <span class="movie-emoji">🥇</span>
+        </div>
+
+        <div class="movie-item reveal">
+          <span class="movie-rank">#2</span>
+          <div class="movie-info">
+            <h3>Guardians of the Galaxy</h3>
+            <p>The soundtrack alone earns it a permanent spot on this list.</p>
+          </div>
+          <span class="movie-emoji">🎵</span>
+        </div>
+
+        <div class="movie-item reveal">
+          <span class="movie-rank">#3</span>
+          <div class="movie-info">
+            <h3>Bruce Almighty</h3>
+            <p>Genuinely funny. A must-watch for everyone.</p>
+          </div>
+          <span class="movie-emoji">😂</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RESUME ===== -->
+  <section id="resume">
+    <div class="container">
+      <header class="section-header reveal">
+        <div class="section-tag">Résumé</div>
+        <h2 class="section-title">Experience &amp; Education</h2>
+        <p class="section-desc">4 years in industry, a B.Tech from NIT Calicut, and a 96% in high school.</p>
+      </header>
+      <div class="resume-layout">
+
+        <!-- Skills -->
+        <div class="resume-section reveal">
+          <h3>Skills</h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <span class="skill-label"><span>C / C++</span><span>Proficient</span></span>
+              <div class="skill-bar"><div class="skill-fill" data-width="0.9"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-label"><span>Python</span><span>Proficient</span></span>
+              <div class="skill-bar"><div class="skill-fill" data-width="0.85"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-label"><span>Java / Android</span><span>Basic</span></span>
+              <div class="skill-bar"><div class="skill-fill" data-width="0.5"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-label"><span>SQL</span><span>Basic</span></span>
+              <div class="skill-bar"><div class="skill-fill" data-width="0.45"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-label"><span>HTML / CSS</span><span>Learning</span></span>
+              <div class="skill-bar"><div class="skill-fill" data-width="0.6"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline -->
+        <div class="resume-section reveal">
+          <h3>Timeline</h3>
+          <div class="timeline">
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2020 – Present</div>
+              <div class="timeline-title">Software Developer</div>
+              <div class="timeline-sub">Tesco Technology · Bengaluru · 4+ years</div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2016 – 2020</div>
+              <div class="timeline-title">B.Tech — EEE · CGPA 8.10</div>
+              <div class="timeline-sub">National Institute of Technology, Calicut</div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2016</div>
+              <div class="timeline-title">AISSCE · 96%</div>
+              <div class="timeline-sub">Lourdes Public School &amp; Junior College</div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2014</div>
+              <div class="timeline-title">AISSE · Grade 10</div>
+              <div class="timeline-sub">Lourdes Public School &amp; Junior College</div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div style="text-align:center; margin-top:2.5rem;" class="reveal">
+        <a href="../resume.html" class="btn btn-outline" target="_blank" rel="noopener">View Full Résumé →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MEME ===== -->
+  <section id="meme">
+    <div class="container">
+      <header class="section-header reveal">
+        <div class="section-tag">For Fun</div>
+        <h2 class="section-title">Meme Corner</h2>
+        <p class="section-desc">Every great portfolio needs one.</p>
+      </header>
+      <div class="meme-card reveal">
+        <img src="../images/daenerys.jpeg" alt="Daenerys holding a dragon egg" class="meme-image">
+        <div class="meme-text">
+          <h2>That Special Moment</h2>
+          <p>When you find the perfect avocado at the supermarket</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="container">
+      <header class="section-header reveal">
+        <div class="section-tag">Say Hello</div>
+        <h2 class="section-title">Contact</h2>
+        <p class="section-desc">Feel free to reach out via email or LinkedIn.</p>
+      </header>
+      <div class="contact-grid">
+
+        <div class="contact-card reveal">
+          <div class="contact-icon">📧</div>
+          <div class="contact-label">Email</div>
+          <div class="contact-value">
+            <a href="mailto:kevinbijoykurian@gmail.com">kevinbijoykurian@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="contact-card reveal">
+          <div class="contact-icon">💼</div>
+          <div class="contact-label">LinkedIn</div>
+          <div class="contact-value">
+            <a href="https://www.linkedin.com/in/kevin-bijoy-kurian-623714161/" target="_blank" rel="noopener">kevin-bijoy-kurian</a>
+          </div>
+        </div>
+
+        <div class="contact-card reveal">
+          <div class="contact-icon">💻</div>
+          <div class="contact-label">GitHub</div>
+          <div class="contact-value">
+            <a href="https://github.com/KevinBK1998" target="_blank" rel="noopener">KevinBK1998</a>
+          </div>
+        </div>
+
+        <div class="contact-card reveal">
+          <div class="contact-icon">📍</div>
+          <div class="contact-label">Location</div>
+          <div class="contact-value">Bangalore, India</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-logo">KBK</div>
+    <ul class="footer-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#movies">Movies</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <p class="footer-copy">© 2024 Kevin Bijoy Kurian · Built with ❤️ and pure HTML/CSS/JS</p>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="Back to top" title="Back to top">↑</button>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script>
+    // ---- Theme Toggle ----
+    const html = document.documentElement;
+    const themeBtn = document.getElementById('themeToggle');
+    const savedTheme = localStorage.getItem('kbk-theme') || 'dark';
+    html.setAttribute('data-theme', savedTheme);
+    themeBtn.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+
+    themeBtn.addEventListener('click', () => {
+      const current = html.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', next);
+      themeBtn.textContent = next === 'dark' ? '☀️' : '🌙';
+      localStorage.setItem('kbk-theme', next);
+    });
+
+    // ---- Hamburger ----
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', String(open));
+    });
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // ---- Active nav link on scroll ----
+    const sections = document.querySelectorAll('section[id]');
+    const navAs = document.querySelectorAll('.nav-links a');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          navAs.forEach(a => a.classList.remove('active'));
+          const link = document.querySelector(`.nav-links a[href="#${e.target.id}"]`);
+          if (link) link.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    sections.forEach(s => observer.observe(s));
+
+    // ---- Reveal on scroll ----
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          revealObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => revealObs.observe(el));
+
+    // ---- Skill bars animate when in view ----
+    const skillFills = document.querySelectorAll('.skill-fill');
+    const skillObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          const w = parseFloat(e.target.dataset.width || '0');
+          e.target.style.width = (w * 100) + '%';
+          e.target.classList.add('animated');
+          skillObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    skillFills.forEach(el => {
+      el.style.width = '0%';
+      skillObs.observe(el);
+    });
+
+    // ---- Back to top ----
+    const backTop = document.getElementById('backTop');
+    window.addEventListener('scroll', () => {
+      backTop.classList.toggle('visible', window.scrollY > 400);
+    }, { passive: true });
+    backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  </script>
+</body>
+</html>
